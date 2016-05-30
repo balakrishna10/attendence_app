@@ -1,0 +1,19 @@
+<div class="container">
+    <form role="form" name="loginForm" ng-submit="submitForm()" novalidate>
+        <div class="login-box">
+            <div class="error-box">
+                <p style="color:red; font-size:16px; text-align:center;" ng-if="error">{{errorMsg}}</p>
+                <!-- <p style="color:red; font-size:16px; text-align:center;" ng-show="loginForm.email_id.$dirty && loginForm.email_id.$invalid">Email is not Valid</p> -->
+            </div>
+            <div class="input-box clearfix text-center">
+                <input class="pull-left" type="email" name="email"  ng-class="{'bar-red': (loginForm.email.$error.required || loginForm.email.$invalid) && loginForm.$submitted }" placeholder="Email" ng-model="user.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" ng-required="true">
+            </div>
+            <div class="input-box clearfix text-center">
+                <input type="text" class="pull-left" ng-class="{'bar-red': (loginForm.mobile.$error.required || loginForm.mobile.$invalid) && loginForm.$submitted }" ng-model="user.mobile" ng-pattern="/^[(]{0,1}[0-9]{3}[)\.\- ]{0,1}[0-9]{3}[\.\- ]{0,1}[0-9]{4}$/" name="mobile" ng-required="true" placeholder="Mobile Number">
+            </div>
+            <div class="login-submit text-center">
+                <button type="submit" class="btn">Login</button>
+            </div>
+        </div>
+    </form>
+</div>

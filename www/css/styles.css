@@ -1,0 +1,58 @@
+body{
+  background-color: #000;
+}
+.login-box {
+  font-size: 18px;
+  /*width: 600px;*/
+  margin: 0 auto;
+  padding: 150px 0;
+}
+.login-box .input-box {
+  margin-bottom: 25px;
+}
+.bar-red{
+  border: 1px solid red !important;
+}
+/*.login-box .input-box label {
+  width: 25%;
+  margin-top: 10px;
+}*/
+.btn ,.btn:hover, .btn:focus{
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.login-box .input-box input {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  width: 90%;
+  height: 40px;
+  padding: 0 15px;
+  margin: 0 5%;
+}
+.login-box .input-box input:focus {
+  outline: none;
+}
+.login-box .login-submit button, .login-box .login-submit button:hover, .login-box .login-submit button:focus {
+  color: #fff;
+  background-color: #f99400;
+  border-radius: 10px; 
+  padding: 10px 80px;
+ 
+}
+.error-box {
+  height: 40px;
+}
+.home-header{
+  color: #fff;
+  background-color: #f99400;
+  padding: 15px;
+}
+.home-content{
+  color: #fff;
+  padding: 30px 0;
+}
+.records{
+  margin-bottom: 5px;
+}
